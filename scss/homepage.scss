@@ -1,0 +1,710 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Shree Devanagari 714", Arial, Lucida, sans-serif !important;
+}
+
+$background-color: white;
+$hm-border-color: black;
+$hm-word-color: #4e4e4e;
+$word-whitebg-color: black;
+
+// Pricing color
+$pricing-bg-color: #FDFCFC;
+$pricing-word-color: white;
+$pricing-header-color: #2d2625;
+$pricing-border-color: #4e423a;
+
+// Start: Header Area
+.home-menu {
+    background: $background-color;
+    position: fixed;
+    display: block;
+    transition: all .5s ease;
+    z-index: 999;
+    border-bottom: 1px solid $hm-border-color;
+    .container-area {
+        margin: 0 auto;
+        max-width: 2000px;
+        padding: 0 15px;
+        .menu-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                padding: 8px 0;
+                .a {
+                    display: block;
+                    font-size: 15px;
+                    font-weight: 400;
+                    transition: all .3s ease;
+                    .img {
+                        width: 300px;
+                        margin-right: 10px;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+            .main-menu {
+                #menu-main-menu {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    #menu-item-about {
+                        padding: 30px 40px;
+                        position: relative;
+                        a {
+                            font-size: 19px;
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $hm-word-color;
+                            font-weight: 400;
+                            transition: all .3s ease;
+                        }
+                    }
+                    #menu-item-pricing {
+                        padding: 30px 40px;
+                        position: relative;
+                        a {
+                            font-size: 19px;
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $hm-word-color;
+                            font-weight: 400;
+                            transition: all .3s ease;
+                        }
+                    }
+                    #menu-item-shop {
+                        padding: 30px 40px;
+                        position: relative;
+                        a {
+                            font-size: 19px;
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $hm-word-color;
+                            font-weight: 400;
+                            transition: all .3s ease;
+                        }
+                    }
+                    #menu-item-contact {
+                        padding: 30px 40px;
+                        position: relative;
+                        a {
+                            font-size: 19px;
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $hm-word-color;
+                            font-weight: 400;
+                            transition: all .3s ease;
+                        }
+                    }
+                    #menu-item-booknow {
+                        position: relative;
+                        a {
+                            background: transparent;
+                            font-size: 19px;
+                            line-height: 1;
+                            margin-left: 15px;
+                            font-weight: 300;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 30px;
+                            height: 40px;
+                            text-transform: none;
+                            border: 1px solid $hm-word-color;
+                            color: $hm-word-color;
+                            margin: 0;
+                            text-decoration: none;
+                            transition: all .3s ease;
+                        }
+                    }
+                    .add-to-cart {
+                        padding: 0 25px 0 30px;
+                        position: relative;
+                        cursor: pointer;
+                        a {
+                            font-size: 19px;
+                            display: inline-block;
+                            margin-top: 14px;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $hm-word-color;
+                            font-weight: 400;
+                            transition: all .3s ease;
+                        }
+                        span {
+                            position: absolute;
+                            right: 0;
+                            height: 30px;
+                            width: 30px;
+                            background: black;
+                            display: flex;
+                            align-items: center;
+                            top: -10px;
+                            justify-content: center;
+                            border-radius: 50%;
+                            color: white;
+                            font-size: 15px;
+                            line-height: 17px;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+}
+// End: Header Area
+
+// Start: Banner Area
+.container-area {
+    margin: 0 auto;
+    max-width: 2000px;
+    padding: 0 15px;
+    .banner-content {
+        transition: all 3s ease;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: $hm-word-color;
+            font-size: 15px;
+            font-weight: 400;
+            transition: all .3s ease;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// End: Header Area
+
+
+// Start: About Website
+#about-section {
+    // background-repeat: no-repeat;
+    // background-position-x: left;
+    // background-position-y: center;
+    // background-size: cover;
+    // background-attachment: fixed;
+    .container-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 180p 15px 150px;
+        margin: 0 auto;
+        max-width: 1230px;
+        .about-content {
+            width: 550px;
+            text-align: center;
+            h2 {
+                font-size: 64px;
+                color: $word-whitebg-color;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin: 30px 0 15px;
+                color: $word-whitebg-color;
+            }
+        }
+    }
+}
+// End: About Website
+
+// Start: Pricing
+.pricing-area {
+    padding: 110px 0 50px;
+    .pricing-constrained-content {
+        padding-top: 0;
+        width: 90%;
+        max-width: 2000px;
+        margin: auto;
+        h2 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: $hm-word-color;
+            font-weight: 300;
+            font-size: 64px;
+        }
+        .pricing-section-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            h3 {
+                font-size: 40px;
+                font-weight: 300;
+                padding-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                color: $hm-word-color;
+                line-height: 1.3;
+            }
+            .mens-haircut {
+                margin-bottom: 50px;
+                width: 48%;
+                background: $pricing-bg-color;
+                h4 {
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 1em;
+                    padding: 15px 10px 10px;
+                    color: $pricing-word-color;
+                    background-color: $pricing-header-color;
+                    margin: 0;
+                    text-decoration: none;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td:first-child {
+                        text-align: left;
+                        width: auto;
+                    }
+                    td {
+                        border: 1px solid $pricing-border-color;
+                        border-width: 1px 0;
+                        padding: 10px 10px 5px;
+                    }
+                }
+            }
+            .womens-haircut {
+                margin-bottom: 50px;
+                width: 48%;
+                background: $pricing-bg-color;
+                h4 {
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 1em;
+                    padding: 15px 10px 10px;
+                    color: $pricing-word-color;
+                    background-color: $pricing-header-color;
+                    margin: 0;
+                    text-decoration: none;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td:first-child {
+                        text-align: left;
+                        width: auto;
+                    }
+                    td {
+                        border: 1px solid $pricing-border-color;
+                        border-width: 1px 0;
+                        padding: 10px 10px 5px;
+                    }
+                }
+            }
+            .upstyle {
+                margin-bottom: 50px;
+                width: 48%;
+                background: $pricing-bg-color;
+                h4 {
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 1em;
+                    padding: 15px 10px 10px;
+                    color: $pricing-word-color;
+                    background-color: $pricing-header-color;
+                    margin: 0;
+                    text-decoration: none;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td:first-child {
+                        text-align: left;
+                        width: auto;
+                    }
+                    td {
+                        border: 1px solid $pricing-border-color;
+                        border-width: 1px 0;
+                        padding: 10px 10px 5px;
+                    }
+                }
+            }
+            .downstyle {
+                margin-bottom: 50px;
+                width: 48%;
+                background: $pricing-bg-color;
+                h4 {
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 1em;
+                    padding: 15px 10px 10px;
+                    color: $pricing-word-color;
+                    background-color: $pricing-header-color;
+                    margin: 0;
+                    text-decoration: none;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td:first-child {
+                        text-align: left;
+                        width: auto;
+                    }
+                    td {
+                        border: 1px solid $pricing-border-color;
+                        border-width: 1px 0;
+                        padding: 10px 10px 5px;
+                    }
+                }
+            }
+            .blow-dry {
+                margin-bottom: 50px;
+                width: 48%;
+                background: $pricing-bg-color;
+                h4 {
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 1em;
+                    padding: 15px 10px 10px;
+                    color: $pricing-word-color;
+                    background-color: $pricing-header-color;
+                    margin: 0;
+                    text-decoration: none;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    td:first-child {
+                        text-align: left;
+                        width: auto;
+                    }
+                    td {
+                        border: 1px solid $pricing-border-color;
+                        border-width: 1px 0;
+                        padding: 10px 10px 5px;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 40px;
+            font-weight: 300;
+            padding-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: $hm-word-color;
+            line-height: 1.3;
+        }
+        .regrowth {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .toner {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .semi {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .foiling-from {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .fashion-color {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .balayage {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .scalp-bleach {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .colour-correction {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+        .after-colour {
+            margin-bottom: 50px;
+            width: 48%;
+            background: $pricing-bg-color;
+            h4 {
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1em;
+                padding: 15px 10px 10px;
+                color: $pricing-word-color;
+                background-color: $pricing-header-color;
+                margin: 0;
+                text-decoration: none;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                td:first-child {
+                    text-align: left;
+                    width: auto;
+                }
+                td {
+                    border: 1px solid $pricing-border-color;
+                    border-width: 1px 0;
+                    padding: 10px 10px 5px;
+                }
+            }
+        }
+    }
+}
+// End: Pricing
+
+// Start: Sebastian
+.sebastian-area {
+    .sebastian-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .sebastian-item {
+            position: relative;
+            width: 49%;
+            img {
+                width: 100%;
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 50px;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                font-weight: 400;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+// End: Sebastian
