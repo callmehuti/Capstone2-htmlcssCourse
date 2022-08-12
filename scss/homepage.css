@@ -8,6 +8,7 @@ html, body {
 }
 
 .home-menu {
+  width: 100%;
   background: white;
   position: fixed;
   display: block;
@@ -28,15 +29,23 @@ html, body {
 .home-menu .container-area .menu-area .logo {
   padding: 8px 0;
 }
-.home-menu .container-area .menu-area .logo .a {
+.home-menu .container-area .menu-area .logo a:hover {
+  outline: 0;
+  text-decoration: none;
+  color: black;
+}
+.home-menu .container-area .menu-area .logo a {
   display: block;
+  margin: 0;
+  padding: 0;
   font-size: 15px;
   font-weight: 400;
   transition: all 0.3s ease;
 }
-.home-menu .container-area .menu-area .logo .a .img {
-  width: 300px;
-  margin-right: 10px;
+.home-menu .container-area .menu-area .logo a .img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   transition: all 0.3s ease;
 }
 .home-menu .container-area .menu-area .main-menu #menu-main-menu {

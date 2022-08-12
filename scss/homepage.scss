@@ -19,8 +19,11 @@ $pricing-word-color: white;
 $pricing-header-color: #2d2625;
 $pricing-border-color: #4e423a;
 
+
+
 // Start: Header Area
 .home-menu {
+    width: 100%;
     background: $background-color;
     position: fixed;
     display: block;
@@ -37,14 +40,22 @@ $pricing-border-color: #4e423a;
             align-items: center;
             .logo {
                 padding: 8px 0;
-                .a {
+                a:hover {
+                    outline: 0;
+                    text-decoration: none;
+                    color: black;
+                }
+                a {
                     display: block;
+                    margin: 0;
+                    padding: 0;
                     font-size: 15px;
                     font-weight: 400;
                     transition: all .3s ease;
                     .img {
-                        width: 300px;
-                        margin-right: 10px;
+                        width: 100%;
+                        margin-right: auto;
+                        margin-left: auto;
                         transition: all .3s ease;
                     }
                 }
