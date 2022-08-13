@@ -9,12 +9,14 @@ html, body {
 }
 
 $background-color: white;
-$hm-border-color: black;
+$background-footer: #2d2625;
+// $hm-border-color: black;
 $word-whitebg-color: black;
 
 // Word Color
 $word-color: #4e4e4e;
 $word-on-darkbg-color: white;
+$word-footer-color: #d4b38e;
 
 // Pricing content color
 $pricing-word-color: $word-on-darkbg-color;
@@ -88,7 +90,7 @@ $pricing-bg-color: #FDFCFC;
     width: 100%;
     display: block;
     z-index: 999;
-    border-bottom: 1px solid $hm-border-color;
+    border-bottom: 1px solid $word-whitebg-color;
     .container-area {
         margin: 0 auto;
         max-width: 1230px;
@@ -341,9 +343,9 @@ $pricing-bg-color: #FDFCFC;
     }
 }
 // End: Pricing
-//text-element($txt-margin, $txt-padding, $txt-deco, $txt-color)
-//text-about-area($font-size, $text-align, $line-height, $font-weight)
-//text-pricing-area($font-size, $font-style, $line-height, $background-color)
+// text-element($txt-margin, $txt-padding, $txt-deco, $txt-color)
+// text-about-area($font-size, $text-align, $line-height, $font-weight)
+// text-pricing-area($font-size, $font-style, $line-height, $background-color)
 
 .sebastian-area {
     .sebastian-items {
@@ -397,3 +399,204 @@ $pricing-bg-color: #FDFCFC;
     }
 }
 // End Mr Smith
+
+// Start Testimonial
+#testimonial {
+    width: 100%;
+    // height: 50%;
+    padding: 30px 0;
+    .title-text {
+        h1 {
+            @include text-element(0 0 40px 0, 0, none, $word-color);
+            @include text-about-area(44px, center, none, 300);
+        }
+    }
+    .testimonial-row {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .testimonial-col {
+            flex-basis: 28%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 10px 1px #c49a6b;
+            cursor: pointer;
+            transition: transform .5s;
+            p {
+                font-size: 14px;
+            }
+            h4 {
+                font-size: 13px;
+            }
+            .user {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+                img {
+                    width: 25%;
+                    margin-right: 40px;
+                    border-radius: 3px;
+                }
+                .user-info {
+                    .bi {
+                        margin-left: 10px;
+                        font-size: 20px;
+                        color: #c49a6b;
+                    }
+                    small {
+                        color: #c49a6b;
+                    }
+                }
+            }
+        }
+        .testimonial-col:hover {
+            transform: translateY(7px);
+        }
+    }
+}
+// End Testimonial
+
+// Start @juicygolden
+.goldenhair-area {
+    // margin-top: 10px;
+    h2 {
+        @include text-element(0 0 40px 0, 0, none, $word-color);
+        @include text-about-area(44px, center, none, 300);
+    }
+    .goldenhair-items {
+        display: flex;
+        .goldenhair-item {
+            width: 100%;
+            display: inline-block;
+            @include text-element(0, 0, none, $word-color);
+            @include text-about-area(15px, none, none, 400);
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+// End @juicygolden
+
+        //text-element($txt-margin, $txt-padding, $txt-deco, $txt-color)
+        //text-about-area($font-size, $text-align, $line-height, $font-weight)
+        //text-pricing-area($font-size, $font-style, $line-height, $background-color)
+
+
+
+// Start Footer
+.footer-area {
+    background-color: $background-footer;
+    .container-area {
+        margin: 0 auto;
+        max-width: 1230px;
+        padding: 0 15px;
+        .footer-items {
+            display: flex;
+            justify-content: space-between;
+            .footer-item {
+                padding-top: 40px;
+                .footer-logo {
+                    display: block;
+                    @include text-about-area(15px, none, none, 400);
+                    @include text-element(0, 0, none, $word-color);
+                    img {
+                        width: 146px;
+                        color: $word-color;
+                        @include text-about-area(15px, none, none, 400);
+                    }
+                }
+                .menu-footer-menu-container {
+                    .footer-menu {
+                        @include text-element(0 0 0 50px, 0, none, $word-color);
+                        li {
+                            list-style: none;
+                            color: $word-color;
+                            a {
+                                @include text-element(0 0 10px 0, 0, none, $word-footer-color);
+                                @include text-about-area(15px, none, none, 400);
+                                text-transform: uppercase;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                .footer-contact {
+                    @include text-element(0 0 0 70px, 0, none, $word-color);
+                    li {
+                        list-style: none;
+                        color: $word-color;
+                        margin-bottom: 24px;
+                        a {
+                            @include text-element(0, 0, none, $word-color);
+                            @include text-about-area(15px, none, none, 400);
+                            display: flex;
+                            align-items: center;
+                            span {
+                                @include text-element(0, 0, none, $word-footer-color);
+                            }
+                            .footer-cont-icon {
+                                width: 35px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                .footer-date {
+                    width: 290px;
+                    font-weight: 300;
+                    margin-left: 90px;
+                    p {
+                        @include text-element(0, 0, none, $word-footer-color);
+                        @include text-about-area(15px, none, 1.5, 300);
+                        letter-spacing: 5px;
+                        span {
+                            @include text-element(0, 0, none, $word-footer-color);
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .book-now-btn {
+            margin-left: 0;
+            a {
+                @include text-element(auto, 14px 32px 10px, none, $background-footer);
+                @include text-about-area(17px, center, 1, 400);
+                justify-content: center;
+                display: flex;
+                width: 150px;
+                background-color: #dbb891;
+            }
+        }
+    }
+    .copy-right {
+        border-top: 1px solid #4e423a;
+        margin-top: 40px;
+        .container-area {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 15px;
+            margin: 0 auto;
+            max-width: 1230px;
+            p {
+                @include text-element(0, 0, none, $word-footer-color);
+                line-height: 26px;
+            }
+            a {
+                img {
+                    color: $word-color;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+}
+// End Footer
