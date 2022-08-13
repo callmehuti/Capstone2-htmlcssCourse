@@ -223,7 +223,7 @@ html, body {
 }
 
 .pricing-area {
-  padding: 110px 0 50px;
+  padding: 60px 0 50px;
 }
 .pricing-area .pricing-constrained-content {
   padding-top: 0;
@@ -344,7 +344,7 @@ html, body {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  box-shadow: 0 1px 10px 1px #c49a6b;
+  box-shadow: 0 1px 10px 1px #4e4e4e;
   cursor: pointer;
   transition: transform 0.5s;
 }
@@ -367,7 +367,7 @@ html, body {
 #testimonial .testimonial-row .testimonial-col .user .user-info .bi {
   margin-left: 10px;
   font-size: 20px;
-  color: #c49a6b;
+  color: #d4b38e;
 }
 #testimonial .testimonial-row .testimonial-col .user .user-info small {
   color: #c49a6b;

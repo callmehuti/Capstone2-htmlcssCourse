@@ -255,7 +255,7 @@ $pricing-bg-color: #FDFCFC;
 
 // Start: Pricing
 .pricing-area {
-    padding: 110px 0 50px;
+    padding: 60px 0 50px;
     .pricing-constrained-content {
         padding-top: 0;
         width: 90%;
@@ -423,7 +423,7 @@ $pricing-bg-color: #FDFCFC;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            box-shadow: 0 1px 10px 1px #c49a6b;
+            box-shadow: 0 1px 10px 1px $word-color;
             cursor: pointer;
             transition: transform .5s;
             p {
@@ -445,7 +445,8 @@ $pricing-bg-color: #FDFCFC;
                     .bi {
                         margin-left: 10px;
                         font-size: 20px;
-                        color: #c49a6b;
+                        // color: #c49a6b;
+                        color: $word-footer-color;
                     }
                     small {
                         color: #c49a6b;
